@@ -1,0 +1,9 @@
+$(document).ready(function(){ 
+  $.ajax({  
+     url:"notification.php",  
+     method:"POST", 
+     success:function(data){  
+          $('.mx-1').html(data);
+     }  
+  });  
+ });
